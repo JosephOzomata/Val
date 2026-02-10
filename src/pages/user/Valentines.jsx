@@ -143,7 +143,7 @@ export default function Valentines() {
            
           </div>
           
-          <div className="w-full max-w-2xl grid grid-cols-3 p-3 gap-5 mx-auto rounded-2xl  shadow-xl border-4 border-pink-200">
+          <div className="w-full max-w-2xl grid grid-cols-3 sm:grid-cols-1 p-3 gap-5 mx-auto rounded-2xl  shadow-xl border-4 border-pink-200">
           <img 
             src={bestie}
             alt="Celebration"
