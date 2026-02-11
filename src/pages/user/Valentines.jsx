@@ -5,6 +5,8 @@ import { toast } from "react-toastify";
 import bestie from "../images/bestie.jpg"
 import pose from "../images/pose.jpg"
 import selfie from "../images/selfie.jpg"
+import cherish1 from "../images/cherish1.mp4"
+import cherish2 from "../images/cherish2.mp4"
 
 export default function Valentines() {
   const [noScale, setNoScale] = useState(1);
@@ -67,7 +69,7 @@ export default function Valentines() {
                   fontWeight: '700'
                 }}
               >
-                Heyy Berry, <br /> will you be my Valentine?
+                Heyy Cherish (Your Highness), <br /> will you be my Valentine?
               </h2>
               
               {/* Subtext */}
@@ -143,8 +145,33 @@ export default function Valentines() {
            
           </div>
           
-          <div className="w-full max-w-2xl grid lg:grid-cols-3 sm:grid-cols-1 p-3 gap-5 mx-auto rounded-2xl  shadow-xl border-4 border-pink-200">
-          <img 
+          <div className="w-full max-w-2xl grid lg:grid-cols-2 sm:grid-cols-1 p-3 gap-5 mx-auto rounded-2xl  shadow-xl border-4 border-pink-200">
+
+            {/* <video src={cherish1}></video> */}
+            <video
+              src={cherish1}
+              // controls   // shows play/pause, volume, etc.
+              autoPlay={true}  // true if you want it to start automatically
+              loop={true}      // true if you want it to loop
+              muted={true}     // required if autoPlay=true in some browsers
+              width="600"       // optional width
+            >
+              Your browser does not support the video tag.
+            </video>
+
+            <video
+              src={cherish2}
+              // controls   // shows play/pause, volume, etc.
+              autoPlay={true}  // true if you want it to start automatically
+              loop={true}      // true if you want it to loop
+              muted={true}     // required if autoPlay=true in some browsers
+              width="600"       // optional width
+            >
+              Your browser does not support the video tag.
+            </video>
+
+            {/* <video src={cherish2}></video> */}
+          {/* <img 
             src={bestie}
             alt="Celebration"
             className="w-full hover:scale-150 transition duration-700 rounded-2xl h-72 object-cover"
@@ -158,7 +185,7 @@ export default function Valentines() {
             src={selfie}
             alt="Celebration"
             className="w-full hover:scale-150 transition duration-700 rounded-2xl h-72 object-cover"
-          />
+          /> */}
 
           {/* <div className="bg-gradient-to-r from-pink-50 to-red-50 p-8">
           </div> */}
@@ -175,6 +202,7 @@ export default function Valentines() {
               I <br /> LOVE <br /> YOUUUU!!!! <br /> ❤️
             </p>
           </div>
+          <p className='mt-4 text-gray-700'>I hope this isn't too cheesy😅😅</p>
         </div>
       )}
 
